@@ -1,0 +1,99 @@
+/* Variáveis */
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+/* Reset CSS */
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Base */
+body {
+  background-color: var(--preto);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header .container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+  font-size: 48px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Principal */
+.principal {
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/boku\ no\ hero.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  justify-content: center;
+  height: 400px;
+}
+
+.principal, .descricao {
+  margin-bottom: 48px;
+}
+
+.principal .titulo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  margin-top: 15%;
+}
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 15px;
+  padding: 15px 30px;
+  transition: .3s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
